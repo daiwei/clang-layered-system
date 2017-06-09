@@ -1,0 +1,8 @@
+init/*
+!init/start.sh
+app
+service
+framework
+hardware
+log
+vendor

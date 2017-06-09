@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#rm -rf CMakeCache.txt cmake_install.cmake CMakeFiles Makefile install_manifest.txt
+function clean_dir() {
+    cd $1
+    rm -rf CMakeCache.txt cmake_install.cmake CMakeFiles Makefile install_manifest.txt
+    cd - > /dev/null
+
+    for file in `ls $1`; do
+        if [ -d $1"/"$file ]; then
+            clean_dir $1"/"$file
+        fi
+    done
+}
+
+if [ ! -n "$1" ]; then
+    clean_dir .
+else
+    clean_dir $1
+fi
+

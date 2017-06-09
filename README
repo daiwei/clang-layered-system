@@ -1,0 +1,27 @@
+###########################################################
+#
+# Layered System Demo
+#
+###########################################################
+
+0. build system         // cmake
+1. app package & installer
+2. loader
+    a) app loader       // run as user
+    b) framework loader // run as root
+    c) service loader   // run as root
+    d) hardware loader  //
+
+3. message system
+    a) method           // module -> module
+    b) command          // loader -> module
+    c) notify           // broadcast
+    d) push             // backend -> system/user/module
+
+-----------------------------------------------------------
+static lint:
+http://clang-analyzer.llvm.org
+[ubuntu] apt-get install clang
+
+unit testing framework:
+https://github.com/Snaipe/Criterion

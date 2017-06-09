@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd `dirname $0`
+cd ..
+
+make clean
+./tool/cmake-clean
+
+cmake -DCMAKE_C_COMPILER=ccc-analyzer -DCMAKE_CXX_COMPILER=c++-analyzer .
+scan-build -o checker make -j4

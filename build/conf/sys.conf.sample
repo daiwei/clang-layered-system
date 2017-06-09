@@ -1,0 +1,26 @@
+[sys]
+log_path                        = log
+
+[workmode]
+mode                            = 1
+
+
+[device]
+imei                            = 025001
+type                            = 1
+version                         = 1.0
+update_url                      = www.website.com/product=gateway
+ping_interval                   = 10
+
+
+[gsm]
+apn                             = cmwap
+apnuser                         =
+apnpasswd                       =
+
+
+[server]
+host                            = 192.168.1.104
+port                            = 4700
+host1                           = localhost
+port1                           = 4700
