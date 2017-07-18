@@ -8,26 +8,8 @@
     _do ## _str(sys, log_path);             \
                                             \
     _do ## _int(workmode, mode);            \
-    _do ## _int(workmode, interval);        \
-    _do ## _int(workmode, interval_accoff); \
-    _do ## _int(workmode, distance);        \
-                                            \
-    _do ## _str(device, imei);              \
     _do ## _int(device, type);              \
     _do ## _str(device, version);           \
-    _do ## _str(device, update_url);        \
-    _do ## _int(device, ping_interval);     \
-    _do ## _str(device, sos);               \
-    _do ## _str(device, sos1);              \
-    _do ## _str(device, sos2);              \
-    _do ## _str(device, sos3);              \
-    _do ## _int(device, timezone);          \
-    _do ## _str(device, sim_no);            \
-                                            \
-    _do ## _str(gsm, apn);                  \
-    _do ## _str(gsm, apnuser);              \
-    _do ## _str(gsm, apnpasswd);            \
-                                            \
     _do ## _str(server, host);              \
     _do ## _int(server, port);              \
     _do ## _str(server, host1);             \
